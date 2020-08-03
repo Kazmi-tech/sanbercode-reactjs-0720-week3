@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import Table from './tugas11/daftarBuah'
+// import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    let dataHargaBuah = [
+      {nama: "Semangka", harga: 10000, berat: 1000},
+      {nama: "Anggur", harga: 40000, berat: 500},
+      {nama: "Strawberry", harga: 30000, berat: 400},
+      {nama: "Jeruk", harga: 30000, berat: 1000},
+      {nama: "Mangga", harga: 30000, berat: 500}
+    ]
+    return(
+      <div className="container">
+        <Table daftar={dataHargaBuah}/>
+      </div>
+    )
+  }
 }
 
 export default App;

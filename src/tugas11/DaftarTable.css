@@ -1,0 +1,11 @@
+.Bodi{
+    border: 1px, solid;
+    border-color: black ;
+}
+
+thead{
+    background-color: grey;
+}
+tbody{
+    background-color: rgba(241, 85, 28, 0.664);
+}
