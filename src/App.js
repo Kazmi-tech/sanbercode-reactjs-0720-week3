@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Table from './tugas11/daftarBuah'
 // import logo from './logo.svg';
-import Timer from './tugas12/countdown'
+import { Timer } from './tugas12/countdown'
 import './App.css';
 
 // Tugas 11
@@ -26,9 +26,9 @@ import './App.css';
 //Tugas 12
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Timer start="100"/>
+    <div>
+      <header>
+        <Timer start={100}/>
       </header>
     </div>
   );
